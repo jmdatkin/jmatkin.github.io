@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <style>
+      {%- for selector in style  %}
+      {{ selector }} {
+      {%- for pair in style[selector] %}
+      {{ pair }}: {{  style[selector][pair] }};
+
+      {%- endfor %}
+      }
+
+      {%- endfor %}
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+	<h1>{{ header }}</h1>
+      </div>
+      <hr>
+      <div id="content">
+	<!--{%- if data|length > 1 %}
+	    <ul>
+	      {%- for item in data %}
+	      <li>{{ item }}</li>
+	      {%- endfor %}
+	    </ul>
+	    {%- else %}
+	<p>data</p>
+	{%- endif %}-->
+	{%- if table is defined%}
+	<table>
+	  <tr>
+	    <th>Occupation</th>
+	    <th>Percentage</th>
+	  </tr>
+	  {%- for row in table %}
+	  <tr>
+	    {%- for column in row %}
+	    <td>{{ column }}</td>
+	    {%- endfor %}
+	  </tr>
+	  {%- endfor %}
+	</table>
+	{%- endif %}
+	{%- if text is defined %}
+	<p>{{ text }}</p>
+	{%- endif %}
+	{%- if links is defined %}
+	<ul style="list-style: none">
+	  {%- for item in links %}
+	  <a href={{ item }}><li>{{item}}</li></a>
+	  {%- endfor %}
+	</ul>
+	{%- endif %}
+      </div>
+    </div>
+  </body>
+</html>

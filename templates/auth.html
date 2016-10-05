@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A Bit of Authentication</title>
+    <style>
+      html, body {
+      overflow: hidden;
+      }
+
+      html {
+      font-family: monospace
+      }
+      
+      #wrapper {
+      background-color: #eee;
+      padding: 10px;
+      border: 1px solid #aaa;
+      position: absolute;
+      }
+
+      div {
+      padding: 10px
+      }
+
+      #login, #register {
+      width: 500px;
+      height: auto;
+      position: relative;
+      margin: 0 auto;
+      float: left
+      }
+      
+      body {
+      background-color: #fafafa;
+      font-family: monospace;
+      color: #777;
+      }
+      
+      ul {
+      list-style: none;
+      }
+      
+      a {
+      color: #777;
+      text-decoration: none
+      }
+      
+      a:hover {
+      color: #bbb;
+      letter-spacing: 2px
+      }
+      
+      #content {
+      padding-left: 5px
+      }
+      
+      h1:hover, p:hover, td:hover {
+      color: #555;
+      cursor: default
+      }
+      
+      td:hover {
+      background-color: #eaeaea
+      }
+      
+      td {
+      padding-right: 20px
+      }
+      
+      th {
+      font-weight: bold
+      }
+
+      #alert {
+      background-color: #eaeaea
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      {%- if cond %}
+      <div id="alert">
+	{{ cond }}
+	</div>
+      {%- endif %}
+      <div id="login">
+	Login:<hr>
+	<form action="/login" method="POST">
+	  Username:<br>
+	  <input type="text" name="user"><br><br>
+	  Password:<br>
+	  <input type="password" name="pass">
+	  <input type="submit" value="Login">
+	</form>
+      </div>
+      <div id="register">
+	Register:<hr>
+	<form action="/register" method="POST">
+	  Username:<br>
+	  <input type="text" name="user"><br><br>
+	  Password:<br>
+	  <input type="password" name="pass">
+	  <input type="submit" value="Register">
+	</form>
+      </div>
+    </div>
+  </body>
+</html>

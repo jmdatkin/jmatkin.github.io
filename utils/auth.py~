@@ -1,0 +1,9 @@
+def getUsers():
+    f = open("../data/users.csv","r")
+    fText = f.read()
+    array = fText.split("\n")
+    users = {}
+    for item in range(len(array))):
+        array[item] = array[item].split(",")
+        users[array[item][0]] = array[item][1]
+    return users
