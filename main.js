@@ -1,6 +1,7 @@
 window.onload = function() {
     var titleBar = document.querySelector(".retro-title-bar");
-    var content = document.querySelector(".main-content-container")
+    var content = document.querySelector(".main-content-container");
+    var contentViewer = document.querySelector(".content-viewer");
 
     var pos = (function() {
         
@@ -47,6 +48,7 @@ window.onload = function() {
             }
 
             titleBar.style.cursor = "grabbing";
+            contentViewer.style.pointerEvents = "none";
 
             var slice = pos.get();
             handler = doMousedown(slice,e.clientX,e.clientY);
@@ -72,6 +74,7 @@ window.onload = function() {
             if (handler !== undefined)
                 document.body.removeEventListener("mousemove",handler);
             titleBar.style.cursor = "grab";
+            contentViewer.style.pointerEvents = "auto";
         };
 
         titleBar.addEventListener("mousedown",mouseDownEvt);
