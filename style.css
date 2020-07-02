@@ -121,12 +121,13 @@ body {
 
 .main-content {
     /* padding: 0 70px; */
-    height: calc(100% - var(--title-bar-thickness));
+    /* height: calc(100% - var(--title-bar-thickness)); */
+    height: 100%;
     letter-spacing: 0.25pt;
     border: 3px ridge var(--window-border-color);
     border-top: none;
     font-size: 14pt;
-    overflow: auto;
+    /* overflow: auto; */
     color: var(--main-text-color);
 
     /* position: absolute;
