@@ -4,7 +4,7 @@ window.onload = function() {
     var contentViewer = document.querySelector(".content-viewer");
 
     var pos = (function() {
-        
+
         var obj = {
             x: 0,
             y: 0
@@ -16,12 +16,12 @@ window.onload = function() {
                     obj[val] = data[val];
             });
             content.style.position = "absolute"
-            content.style.left = obj.x+"px";
-            content.style.top = obj.y+"px";
+            content.style.left = obj.x + "px";
+            content.style.top = obj.y + "px";
         };
 
         var get = function() {
-            return Object.assign({},obj);
+            return Object.assign({}, obj);
         }
 
         return {
@@ -51,10 +51,10 @@ window.onload = function() {
             contentViewer.style.pointerEvents = "none";
 
             var slice = pos.get();
-            handler = doMousedown(slice,e.clientX,e.clientY);
+            handler = doMousedown(slice, e.clientX, e.clientY);
         };
 
-        var doMousedown = function(slice,ix,iy) {
+        var doMousedown = function(slice, ix, iy) {
             var mouseMoveEvt = function(e) {
                 var diffX = e.clientX - ix;
                 var diffY = e.clientY - iy;
@@ -66,20 +66,21 @@ window.onload = function() {
                     y: slice.y + diffY
                 });
             };
-            document.body.addEventListener("mousemove",mouseMoveEvt);
+            document.body.addEventListener("mousemove", mouseMoveEvt);
             return mouseMoveEvt;
         };
 
         var mouseUpEvt = function() {
             if (handler !== undefined)
-                document.body.removeEventListener("mousemove",handler);
+                document.body.removeEventListener("mousemove", handler);
             titleBar.style.cursor = "grab";
             contentViewer.style.pointerEvents = "auto";
         };
 
-        titleBar.addEventListener("mousedown",mouseDownEvt);
-        document.body.addEventListener("mouseup",mouseUpEvt);
+        titleBar.addEventListener("mousedown", mouseDownEvt);
+        document.body.addEventListener("mouseup", mouseUpEvt);
 
+        //Close button
         document.querySelector("#close").onclick = function() {
             if (content.classList.contains("hidden"))
                 content.classList.remove("hidden");
