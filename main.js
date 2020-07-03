@@ -1,5 +1,6 @@
 window.onload = function() {
     var titleBar = document.querySelector(".retro-title-bar");
+    var desktop = document.querySelector(".desktop");
     var windowContainer = document.querySelector(".window-container");
     var content = document.querySelector(".window-content");
     var contentViewer = document.querySelector(".content-viewer");
