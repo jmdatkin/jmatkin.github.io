@@ -1,18 +1,61 @@
 html,
 body {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: #fff;
     font-family: Arial, Helvetica, sans-serif;
+    padding: var(--vert-padding) var(--horiz-padding);
+    background-size: contain;
+    image-rendering: pixelated;
+}
+
+body.sparkles {
+    color: #fff;
+    background-image: url("assets/img/sparkles.gif");
+}
+
+body.tech {
+    color: #fff;
+    background-image: url("assets/img/home_bg2.png");
+}
+
+body.tech a {
+    
+    color: rgb(179, 179, 179);
+}
+
+body.space {
+    color: #fff;
+    background-image: url("assets/img/home_bg3.png");
+
+}
+
+body.space a {
+    color: rgb(179, 179, 179);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 600px) {
     .sectional-nav>li {
         font-size: 14pt;
     }
+}
+
+:root {
+    --vert-padding: 10px;
+    --horiz-padding: 15px;
 }
 
 .sectional-nav {
@@ -22,7 +65,35 @@ body {
 }
 
 .sectional-nav>li {
-    display: inline-block;
     margin-right: 25px;
     float: left;
+}
+
+.nameplate {
+    margin-bottom: 0;
+}
+
+.tagline {
+    margin-top: 0;
+    margin-left: 2px;
+}
+
+.header {
+    width: 100%;
+}
+
+.header-icon {
+    float: right;
+    right: var(--horiz-padding);
+    top: var(--vert-padding);
+    /* position: absolute; */
+    padding: var(--vert-padding) var(--horiz-padding);
+    width: 75px;
+    height: 75px;
+    image-rendering: crisp-edges;
+    pointer-events: none;
+}
+
+p {
+    text-align: justify;
 }
