@@ -62,6 +62,7 @@ window.onload = function() {
 
             var doMousedown = function(slice, ix, iy) {
                 var mouseMoveEvt = function(e) {
+                    e.preventDefault();
                     var diffX = e.clientX - ix;
                     var diffY = e.clientY - iy;
 
@@ -76,7 +77,8 @@ window.onload = function() {
                 return mouseMoveEvt;
             };
 
-            var mouseUpEvt = function() {
+            var mouseUpEvt = function(e) {
+                e.preventDefault();
                 if (handler !== undefined)
                     document.body.removeEventListener("mousemove", handler);
                 titleBar.style.cursor = "grab";
