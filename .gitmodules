@@ -1,0 +1,3 @@
+[submodule "fastlist"]
+	path = fastlist
+	url = https://github.com/jmdatkin/fastlist.git
