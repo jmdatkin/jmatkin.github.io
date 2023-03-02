@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import Project from '@/components/Project'
+import Portrait from '@/components/Portrait'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,110 +16,63 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+      {/* <div className="w-full h-full bg-zinc-100 p-8">
+        <main className="w-full md:w-[calc(100%-2rem)] mx-auto bg-zinc-50 p-4 rounded border shadow-md">
+          <div className={styles.description}>
+            Hi
+          </div>
+        </main>
+      </div> */}
+      <div className="w-full h-full bg-white">
+        <div className="flex flex-col">
+          <div className="flex h-[5rem] border-b">
+            <div className="w-screen-layout-offset border-r"></div>
+            <div className="flex-grow"></div>
+            <div className="w-screen-layout-offset border-l"></div>
+          </div>
+          <div className="flex flex-grow">
+            <div className="w-screen-layout-offset border-r"></div>
+            <main className={`${styles.Main} flex-grow`}>
+              <header className="flex justify-between">
+                <div className="flex flex-col p-4">
+                  <h1 className={`${styles.Nameplate} tracking-tight`}>Julian Atkin</h1>
+                  <h2 className="mb-4">Full Stack Engineer</h2>
+                  <section className="mb-16">
+                    Hi, I'm Julian! My mission is to build accessible and usable web technologies that make the world a better place.
+                  </section>
+                </div>
+                <div className="relative object-cover min-w-[12rem] border-l">
+                  <Portrait></Portrait>
+                </div>
+              </header>
+              <section className="border-t">
+                <h3 className="p-4 border-b ">Projects</h3>
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 [&>*]:p-4 [&>*]:bg-white gap-px bg-zinc-200">
+                  <Project title="Grid Chat">
+
+                  </Project>
+                  <Project title="Croppy">
+
+                  </Project>
+                  <Project title="League of Legends Ability Quiz">
+
+                  </Project>
+                  <Project title="Fake Instagram Post Generator">
+
+                  </Project>
+
+                </div>
+              </section>
+            </main>
+            <div className="w-screen-layout-offset border-l"></div>
+          </div>
+          <div className="flex h-[4rem] border-t">
+            <div className="w-screen-layout-offset border-r"></div>
+            <div className="flex-grow"></div>
+            <div className="w-screen-layout-offset border-l"></div>
           </div>
         </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+      </div>
     </>
   )
 }
