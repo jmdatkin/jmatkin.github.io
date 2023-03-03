@@ -7,12 +7,14 @@ import Portrait from '@/components/Portrait'
 import SocialButtons from '@/components/SocialButtons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
+import Animated from '@/components/Animated'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <>
+    <Animated>
       <Head>
         <title>Julian Atkin</title>
         <meta name="description" content="Full Stack Engineer" />
@@ -55,6 +57,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+    </Animated>
     </>
   )
 }

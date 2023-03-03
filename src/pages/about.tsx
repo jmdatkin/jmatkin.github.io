@@ -4,19 +4,21 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Project from '@/components/Project'
 import Portrait from '@/components/Portrait'
+import Animated from '@/components/Animated'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function About() {
     return (
         <>
+        <Animated>
             <Head>
                 <title>Julian Atkin</title>
                 <meta name="description" content="Full Stack Engineer" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <header className="p-6 py-6 mb-6">
+            <header className="p-6 py-8 mb-6">
                 <h1 className={`tracking-tight`}>About Me</h1>
             </header>
             <div className="p-6">
@@ -82,6 +84,7 @@ export default function About() {
                     </div>
                 </section>
             </div>
+        </Animated>
         </>
     )
 }
