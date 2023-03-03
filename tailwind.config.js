@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'desktop': '1280px'
+        'desktop': '1480px',
+        'desktop-xl': '2380px'
       },
     },
   },
