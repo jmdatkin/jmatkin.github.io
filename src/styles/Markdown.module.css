@@ -1,0 +1,39 @@
+.markdown {
+    @apply p-4;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  @apply my-6;
+}
+
+.markdown blockquote {
+    @apply px-6 py-2;
+    @apply bg-zinc-200;
+}
+
+.markdown h1 {
+    @apply text-6xl;
+}
+
+.markdown h2 {
+    @apply text-5xl;
+}
+
+.markdown h3 {
+    @apply text-4xl;
+}
+
+.markdown h4 {
+    @apply text-4xl;
+}
+
+.markdown h5 {
+    @apply text-3xl;
+}
+
+.markdown h6 {
+    @apply text-2xl;
+}

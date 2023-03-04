@@ -26,7 +26,7 @@ function Layout({children}) {
             </div>
             <div className="flex flex-grow">
               <div className="w-screen-layout-offset border-r hidden md:block bg-zinc-100"></div>
-              <main className={`flex-grow`}>
+              <main className={`flex-grow bg-white`}>
                 {children}
               </main>
               <div className="w-screen-layout-offset border-l hidden md:block bg-zinc-100"></div>
