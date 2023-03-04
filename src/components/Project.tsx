@@ -1,3 +1,5 @@
+import { faEllipsis, faHamburger, faRocket } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { ReactNode } from "react";
 
@@ -38,13 +40,39 @@ function Project(props: ProjectProps) {
     }
 
     return (
-        <article className="Project relative hover:bg-zinc-50 focus-visible:bg-zinc-100 focus-visible:outline-none focus-visible:shadow-sm  hover:z-[999] focus-visible:z-[999] active:bg-zinc-100  hover:shadow-md active:shadow-sm cursor-pointer duration-[0.07s] h-full flex flex-col">
+        <article className={`Project relative hover:shadow-md active:shadow-sm active:bg-zinc-100 ${!props.disabled ? 'hover:after:opacity-100' : ''} after:block after:h-full after:w-full  after:bg-zinc-700 after:absolute after:opacity-0 focus-visible:bg-zinc-100 focus-visible:outline-none hover:z-[999] focus-visible:z-[999] cursor-pointer duration-[0.07s] h-full flex flex-col`}>
             {props.disabled ? inner() :
-                <Link className="block w-full h-full" target="_blank" href={props.href ? props.href : `/projects/${props.slug}`}>
+                // <Link className="block w-full h-full" target="_blank" href={props.href ? props.href : `/projects/${props.slug}`}>
+                //     {inner()}
+                // </Link>
+                <>
                     {inner()}
-                </Link>
+                    {<div className="w-full h-full grid grid-cols-2 absolute z-[1000]">
+                        <Link href={props.href} className="block w-full h-full bg-white hover:opacity-100 opacity-0 duration-[0.08s] border-r active:shadow-sm active:bg-zinc-100">
+                            <div className="h-full flex flex-col items-center justify-around">
+                                <div className="flex flex-col items-center">
+                                    <FontAwesomeIcon icon={faRocket}></FontAwesomeIcon>
+                                    <span className="font-medium text-lg">
+                                        Launch
+                                    </span>
+                                </div>
+                            </div>
+                        </Link>
+                        <Link href={`/projects/${props.slug}`} className="block w-full h-full bg-white hover:opacity-100 opacity-0 duration-[0.08s] border-l active:shadow-sm active:bg-zinc-100">
+                            <div className="h-full flex flex-col items-center justify-around">
+                                <div className="flex flex-col items-center">
+                                    <FontAwesomeIcon icon={faEllipsis}></FontAwesomeIcon>
+                                    <span className="font-medium text-lg">
+                                        Details
+                                    </span>
+                                </div>
+                            </div>
+                        </Link>
+                    </div>}
+                </>
+
             }
-        </article>
+        </article >
     );
 }
 

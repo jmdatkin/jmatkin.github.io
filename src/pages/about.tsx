@@ -18,12 +18,17 @@ export default function About() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <header className="p-6 py-8 mb-6">
+            <header className="p-6 py-8 pb-2 mb-4">
                 <h1 className={`tracking-tight`}>About Me</h1>
             </header>
-            <div className="p-6">
-                <p>I grew up in Bayside, Queens. I have a longstanding interest in computers and technology.</p>
-                <p>What excites me about programming is the thrill and satisfaction of inventing something new. Today, when are lives are so integrated with technology, I have made it my mission to develop tools that will make a positive impact on the lives of their users.</p>
+            <div className="p-6 [&>*]:mb-2">
+            {/* <ul>
+                <li>Located in Queens, NY</li>
+            </ul> */}
+                <p>I have a deep interest in technology, and am constantly looking for new avenues to explore.</p>
+                <p>I develop software for the thrill and satisfaction of inventing something new, and the fulfillment of improving the lives and experiences of others.<br></br>
+                Today, when we are so integrated with technology, I have made it my mission to develop tools that will make a positive impact on the lives of their users.</p>
+                <strong>I'd love to </strong>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 border-t md:border-b">
                 <section className="md:border-r">
