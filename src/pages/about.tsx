@@ -22,8 +22,8 @@ export default function About() {
                 <h1 className={`tracking-tight`}>About Me</h1>
             </header>
             <div className="p-6">
-                <p>I grew up in Bayside, Queens.</p>
-                <p>What excites me about programming is the thrill and satisfaction of inventing something new.</p>
+                <p>I grew up in Bayside, Queens. I have a longstanding interest in computers and technology.</p>
+                <p>What excites me about programming is the thrill and satisfaction of inventing something new. Today, when are lives are so integrated with technology, I have made it my mission to develop tools that will make a positive impact on the lives of their users.</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 border-t md:border-b">
                 <section className="md:border-r">
