@@ -12,6 +12,10 @@ function Navbar() {
             href: "/",
         },
         {
+            name: "Projects",
+            href: "/projects"
+        },
+        {
             name: "Resume",
             href: "/resume"
         },

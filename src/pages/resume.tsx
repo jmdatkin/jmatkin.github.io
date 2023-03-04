@@ -93,6 +93,18 @@ export default function About() {
 
                         </div>
                     </section>
+                    <section className="">
+                        <h3 className="p-6 pb-2">Skills</h3>
+                        <div className="w-full p-6">
+                            <ul className='space-y-2'>
+                                <li>React.js</li>
+                                <li>Vue.js</li>
+                                <li>Vanilla JS</li>
+                                <li>CSS</li>
+                            </ul>
+
+                        </div>
+                    </section>
                 </div>
             </Animated>
         </>

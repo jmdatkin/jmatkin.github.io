@@ -35,7 +35,7 @@ export default function Home() {
             <Portrait></Portrait>
           </div>
         </header>
-        <section className="border-t border-b">
+        {/* <section className="border-t border-b">
           <h3 className="px-6 py-6 border-b ">Projects</h3>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 [&>*]:bg-white gap-px bg-zinc-200">
             <Project title="Grid Chat" slug="grid-chat" href="https://grid-chat-app.web.app/" tech={['React.js', 'Firebase Realtime Database', 'Tailwind CSS']}>
@@ -59,7 +59,7 @@ export default function Home() {
               </span>
             </div>
           </div>
-        </section>
+        </section> */}
       </Animated>
     </>
   )
