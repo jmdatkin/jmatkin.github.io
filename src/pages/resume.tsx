@@ -19,12 +19,12 @@ export default function About() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <header className="p-6 py-8 mb-6">
-                <h1 className={`tracking-tight`}>About Me</h1>
+                <h1 className={`tracking-tight`}>Resume</h1>
             </header>
-            <div className="p-6">
+            {/* <div className="p-6">
                 <p>I grew up in Bayside, Queens.</p>
                 <p>What excites me about programming is the thrill and satisfaction of inventing something new.</p>
-            </div>
+            </div> */}
             <div className="grid grid-cols-1 md:grid-cols-2 border-t md:border-b">
                 <section className="md:border-r">
                     <h3 className="p-6 ">Favorite Tech</h3>
@@ -68,17 +68,14 @@ export default function About() {
                     </div>
                 </section>
                 <section className="border-t md:border-t-0">
-                    <h3 className="p-6 ">Hobbies/Interests</h3>
+                    <h3 className="p-6 ">Education</h3>
                     <div className="w-full p-6">
                         <p className="mb-4">
-                            Besides building awesome web experiences, I enjoy:
+                            <strong>B.S. Computer Science</strong> - University at Albany
                         </p>
-
                         <ul>
-                            <li>🕉 Yoga/meditation</li>
-                            <li>🎧Music production</li>
-                            <li>🌳Spending time in nature</li>
-                            <li>🎮Online gaming (League of Legends and Old School RuneScape😎)</li>
+                            <li>3.4 Cumulative GPA</li>
+           
                         </ul>
 
                     </div>

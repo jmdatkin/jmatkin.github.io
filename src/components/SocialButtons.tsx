@@ -1,12 +1,16 @@
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 
 function SocialButtons() {
     return ( 
-        <div className="flex">
-            <Link className="text-4xl hover:text-zinc-400 duration-[0s]" href="https://linkedin.com/in/jatkindev">
-                <FontAwesomeIcon className="duration-[0s] text-white" icon={faLinkedin}></FontAwesomeIcon>
+        <div className="flex gap-2 items-center">
+            <Link title="LinkedIn" className="text-4xl hover:text-zinc-700 !duration-[0s]" href="https://linkedin.com/in/jatkindev">
+                <FontAwesomeIcon className="!duration-[0s] " icon={faLinkedin}></FontAwesomeIcon>
+            </Link>
+            <Link title="E-mail" className="text-4xl hover:text-zinc-700 !duration-[0s]" href="">
+                <FontAwesomeIcon className="!duration-[0s] " icon={faEnvelope}></FontAwesomeIcon>
             </Link>
         </div>
      );
