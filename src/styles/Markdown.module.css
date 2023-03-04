@@ -5,13 +5,38 @@
 .markdown p,
 .markdown ul,
 .markdown ol,
-.markdown blockquote {
+.markdown blockquote,
+.markdown pre {
   @apply my-6;
 }
 
 .markdown blockquote {
     @apply px-6 py-2;
     @apply bg-zinc-200;
+}
+
+.markdown code {
+    @apply p-1;
+    @apply rounded;
+    @apply border;
+    @apply bg-zinc-100;
+    @apply font-bold;
+}
+
+.markdown pre {
+    @apply w-full;
+    @apply p-4;
+    @apply border;
+    @apply bg-gray-500;
+    @apply text-zinc-50;
+
+}
+
+.markdown pre code {
+    @apply p-0;
+    @apply bg-transparent;
+    @apply font-normal;
+    @apply border-none;
 }
 
 .markdown h1 {

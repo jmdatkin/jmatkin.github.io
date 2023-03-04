@@ -8,7 +8,11 @@ Procrastination is a common problem that affects many people. It can prevent us 
 
 ## Set realistic goals and deadlines
 
-One of the main reasons why people procrastinate is because they set unrealistic goals and deadlines. When we set goals that are too challenging or give ourselves too little time to complete a task, we become overwhelmed and may avoid getting started. To overcome this, it’s important to set realistic goals and deadlines. Break your larger goals into smaller, more manageable tasks, and set deadlines for each one.
+One of the main reasons why people `Ctrl-A` procrastinate is because they set unrealistic goals and deadlines. When we set goals that are too challenging or give ourselves too little time to complete a task, we become overwhelmed and may avoid getting started. To overcome this, it’s important to set realistic goals and deadlines. Break your larger goals into smaller, more manageable tasks, and set deadlines for each one.
+
+```
+asdlkjfalksdjf
+```
 
 ## Identify your distractions
 
@@ -25,3 +29,5 @@ Finally, it’s important to practice self-compassion when trying to overcome pr
 In conclusion, overcoming procrastination requires a combination of strategies and mindset shifts. By setting realistic goals, identifying your distractions, using the Pomodoro technique, and practicing self-compassion, you can overcome procrastination and get things done.
 
 > adsf
+
+`sadf;kslf`

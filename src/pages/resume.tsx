@@ -27,44 +27,9 @@ export default function About() {
             </div> */}
             <div className="grid grid-cols-1 md:grid-cols-2 border-t md:border-b">
                 <section className="md:border-r">
-                    <h3 className="p-6 ">Favorite Tech</h3>
+                    <h3 className="p-6 ">Experience</h3>
                     <div className="w-full p-6">
-                        <table className="w-full">
-                            <tbody>
-                                <tr className="border">
-                                    <td className="border p-2">
-                                        Favorite app framework
-                                    </td>
-                                    <td className="border p-2">
-                                        Next.js
-                                    </td>
-                                </tr>
-                                <tr className="border">
-                                    <td className="border p-2">
-                                        Favorite front-end framework
-                                    </td>
-                                    <td className="border p-2">
-                                        React.js
-                                    </td>
-                                </tr>
-                                <tr className="border">
-                                    <td className="border p-2">
-                                        Favorite CSS framework
-                                    </td>
-                                    <td className="border p-2">
-                                        Tailwind CSS
-                                    </td>
-                                </tr>
-                                <tr className="border">
-                                    <td className="border p-2">
-                                        Favorite back-end platform
-                                    </td>
-                                    <td className="border p-2">
-                                        Firebase
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                       
                     </div>
                 </section>
                 <section className="border-t md:border-t-0">
@@ -73,8 +38,9 @@ export default function About() {
                         <p className="mb-4">
                             <strong>B.S. Computer Science</strong> - University at Albany
                         </p>
-                        <ul>
+                        <ul className='space-y-1'>
                             <li>3.4 Cumulative GPA</li>
+                            <li>Minor in Music</li>
            
                         </ul>
 
