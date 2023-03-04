@@ -7,6 +7,9 @@ import Portrait from '@/components/Portrait'
 import Animated from '@/components/Animated'
 import Carousel from '@/components/Carousel'
 import { useEffect, useRef, useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRocket } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -53,6 +56,17 @@ export default function GridChat() {
               <span>Style UI elements</span>
             </div>
           </section>
+          <section className="">
+            <Link target="_blank" href="https://grid-chat-app.web.app/" className="w-full h-full cursor-pointer bg-white block hover:bg-zinc-50 active:bg-zinc-100 hover:shadow-md active:shadow-sm duration-[0.07s]">
+            <div className="w-full h-full flex flex-col p-6 items-center justify-around">
+              <div className="flex flex-col">
+              <span>Launch App</span>
+              <FontAwesomeIcon icon={faRocket}></FontAwesomeIcon>
+              </div>
+            </div>
+            </Link>
+          </section>
+
         </div>
       </Animated>
     </>

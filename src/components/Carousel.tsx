@@ -47,10 +47,10 @@ function Carousel(props: Props) {
                 : ''
             }
             <div className="w-full h-full top-0 left-0 absolute grid grid-cols-2 z-[999]">
-                <button onClick={decrement} className="block w-full h-full bg-white/60 hover:opacity-100 opacity-0 duration-[0.08s]">
+                <button onClick={decrement} className="block w-full h-full bg-white/60 hover:opacity-100 active:bg-white/70 opacity-0 duration-[0.08s]">
                     <FontAwesomeIcon icon={faChevronLeft}></FontAwesomeIcon>
                 </button>
-                <button onClick={increment} className="block w-full h-full bg-white/60 hover:opacity-100 opacity-0 duration-[0.08s]">
+                <button onClick={increment} className="block w-full h-full bg-white/60 hover:opacity-100 active:bg-white/70 opacity-0 duration-[0.08s]">
                     <FontAwesomeIcon icon={faChevronRight}></FontAwesomeIcon>
                 </button>
             </div>
